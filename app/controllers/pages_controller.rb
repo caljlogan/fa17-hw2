@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
-    # foo = Foobar.new "baz"
-    # @baz = foo.bar :cat, sat: :dat, dat: :sat
+    foo = Foobar.new "baz"
+    @baz = foo.bar :cat, sat: :dat, dat: :sat
   end
 
   def stringify
@@ -17,5 +17,9 @@ class PagesController < ApplicationController
 
   def person
     @person = Person.new params[:name], params[:age]
+  end
+
+  def me
+    @words = "My name is Joe Logan. I am from Santa Barbara. Fun fact: I'm doing this assignment on my birthday. Most excited about: developing websites"
   end
 end

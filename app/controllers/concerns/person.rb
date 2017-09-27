@@ -8,17 +8,17 @@ class Person
 
   def nickname
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    return @name.slice(0,4)
   end
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    1990
+    return 2017 - @age.to_i
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    return "Hi I'm " + @name + " and I am " + @age +" years old."
   end
 
 end
